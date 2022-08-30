@@ -17,7 +17,7 @@ let positions = [
 function init() {
   selected = []
 
-  currentPlayer.innerHTML = `JOGADOR DA VEZ ${player}`
+  currentPlayer.innerHTML = `JOGADOR DA VEZ:  ${player}`
 
   document.querySelectorAll('.jogo button').forEach(item => {
     item.innerHTML = ''
@@ -38,7 +38,7 @@ function newMove(e) {
   }, [100])
 
   player = player === 'X' ? 'O' : 'X'
-  currentPlayer.innerHTML = `JOGADOR DA VEZ ${player}`
+  currentPlayer.innerHTML = `JOGADOR DA VEZ: ${player}`
 }
 
 function check() {
